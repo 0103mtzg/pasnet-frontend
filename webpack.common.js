@@ -2,7 +2,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.jsx',
     output: {
       filename: 'bundle.[hash].js'
     },
@@ -19,6 +19,9 @@ module.exports = {
               exclude: /node_modules/,
               use: {
                 loader: 'babel-loader',
+                options:{
+                  presets:['@babel/preset-env'],
+                }
               },
             },
             { 
