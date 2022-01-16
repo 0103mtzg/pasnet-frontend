@@ -6,5 +6,6 @@ module.exports=mergeDev(commonDev,{
     mode:'development',
     devServer:{
         port:3000,
+        hot:true,
     },
 });

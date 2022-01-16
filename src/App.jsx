@@ -4,6 +4,7 @@ const App = () => {
   return (
   <div>
     Hello, Webpack!
+    Hi React
   </div>
   );
 }
